@@ -30,11 +30,11 @@
 |1        |example                             |example               |4F]6h^oY  |9dg14ofda6271k78ec0idyh8a372a187|
 ...
 
-### 3. Описание алгоритмов
-* Алгоритм действий пользователя при регистрации на сайте
+### 3. Описание алгоритма
+* При регистрации на сайте
 ![00](https://user-images.githubusercontent.com/90519017/198081346-e8bfc126-49df-499f-a3f1-9d3930a67b6d.png)
 
-* Алгоритм действий пользователя при авторизации на сайте
+* При авторизации на сайте
 ![01](https://user-images.githubusercontent.com/90519017/198081442-f063c8f9-0c5b-438c-a052-04b473991b55.png)
 
 ### 4. Фрагменты кода
@@ -48,7 +48,7 @@ if(!isset($_SESSION['auth'])){
     header('Location: login.php');
     exit;
 } else {
-    echo '<p class="success">Привет, ', $_SESSION['name'], '!</p>';
+    echo '<p class="success">Hello, ', $_SESSION['name'], '!</p>';
 }
 
 ?>
