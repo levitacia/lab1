@@ -31,9 +31,6 @@
             $result = $query->execute();
             if ($result) {
                 $check = 1;
-                //echo '<p class="success">Регистрация прошла успешно!</p>';
-                //$new_url = 'http://localhost/login.php';
-                //header('Location: '.$new_url);
                 $query1 = $connection->prepare("SELECT * FROM `users` WHERE `login` = :login");
                 $query1->bindParam("login",  $login, PDO::PARAM_STR);
                 $query1->execute();
