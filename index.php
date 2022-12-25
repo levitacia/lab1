@@ -5,7 +5,7 @@ if(!isset($_SESSION['auth'])){
     header('Location: login.php');
     exit;
 } else {
-    echo '<p class="success">Приветствую тебя, ', $_SESSION['name'], '!</p>';
+    echo '<p class="success">Hello, ', $_SESSION['name'], '!</p>';
 }
 
 ?>
